@@ -1,0 +1,119 @@
+/* --- Styling for the Detailed Project Card (ProjectCard.js) --- */
+
+/* Main Card Styling */
+.project-card-detailed {
+    background-color: white;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    margin-bottom: 30px; /* Space below each card */
+    min-height: 450px; /* Ensures all cards have a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes buttons to the bottom */
+    text-align: left;
+}
+
+/* Header/Title Styling */
+.project-card-title {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/* Description Text */
+.project-card-description {
+text-align: left !important;
+    
+    /* 2. Set the display property to block if it was changed to inline-block by another style */
+    display: block !important; 
+    
+    /* 3. Reset any centered margin properties, though this is less likely to be the issue */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    
+    /* Making it readable (dark color), as seen in the screenshot it's gray */
+    color: #333 !important; 
+    
+    font-size: 0.9em; 
+    line-height: 1.5; 
+    margin-bottom: 15px; 
+    flex-grow: 1;
+}
+
+/* Tag Container */
+.project-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between tags */
+    margin-bottom: 30px;
+}
+
+/* Individual Tag Styling */
+.tag {
+    background-color: #add8e6; /* Light blue background */
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Button Container */
+
+
+/* Base Button Styling (Anchor Tag) */
+/* --- ProjectCard.css --- */
+
+/* ... (Styles before the button section remain the same) ... */
+
+/* Button Container */
+.project-card-buttons {
+    /* CRITICAL CHANGE: Set gap to 0 so the single button expands fully */
+    display: flex;
+    gap: 0px; 
+    margin-top: 15px; 
+}
+
+/* Base Button Styling (Anchor Tag) */
+.project-card-button {
+    /* Ensure the button takes all available space */
+    flex: 1 1 100%; 
+    padding: 10px 0; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+}
+
+/* Optional: Adding this class just to be explicit that it's full width */
+.full-width-button {
+    width: 100%;
+}
+
+/* 'View Code' Button - Primary Green */
+.view-code-btn {
+    background-color: #3cb371; 
+    color: white;
+}
+
+.view-code-btn:hover {
+    background-color: #2e8b57; 
+}
+
+/* REMOVED: .visual-explanation-btn styles are no longer needed */
+
+/* Arrow styling */
+.arrow {
+    margin-left: 5px; 
+    font-size: 1em;
+}
