@@ -4,6 +4,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import gmail from '../assets/img/brand-google-gmail.svg';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
 
@@ -40,17 +41,17 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link as={Link} to="/skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+            {/* <Nav.Link as={Link} to="/skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link> */}
             <Nav.Link as={Link} to="/projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            <Nav.Link as={Link} to="/photography" className={activeLink === 'Photography' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Photography')}>Photography</Nav.Link>
+            {/* <Nav.Link as={Link} to="/photography" className={activeLink === 'Photography' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Photography')}>Photography</Nav.Link> */}
             <Nav.Link as={Link} to="/contact" className={activeLink === 'Contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Contact')}>contact</Nav.Link>
           </Nav>
 
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/soham-bhanja-b27ab8375" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Linkedin" /></a>
-              <a href="#"><img src={navIcon2} alt="" /></a>
-              <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="https://www.instagram.com/sohambhanja_27/"  target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="" /></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sohambhanjadps@gmail.com" target="_blank" rel="noopener noreferrer"><img src={gmail} alt="" /></a>
             </div>
             <HashLink to="/contact">
               <button className="vvd"><span>Let’s Connect</span></button>

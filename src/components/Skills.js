@@ -7,10 +7,9 @@ import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
-export const Skills = () => {
+export const AXL8RActivities = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -29,36 +28,50 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="axl8r" id="axl8r-activities">
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>These are currently my skills and am looking to explore them<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                    <div className="activities-bx wow zoomIn">
+                        <h2>What Happens in AXL8R?</h2>
+                        <p>
+                          AXL8R is more than just a racing club – it’s a collaborative environment where we tackle real-world engineering challenges, push innovative designs, and learn teamwork through hands-on projects. Here’s a glimpse into our journey and the activities that define our club life:
+                        </p>
+                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme axl8r-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={meter1} alt="Team Meeting" />
+                                <h5>Strategy Sessions</h5>
+                                <p>
+                                  Regular brainstorms and collaborative discussions to decide race tactics, technical improvements, and project timelines.
+                                </p>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={meter2} alt="Hands-on Assembly" />
+                                <h5>Building & Testing</h5>
+                                <p>
+                                  Engage in the mechanical assembly, electronics wiring, and rigorous component testing sessions on real racing prototypes.
+                                </p>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={meter3} alt="Race Events" />
+                                <h5>Race Events & Review</h5>
+                                <p>
+                                  Participate in intercollegiate racing competitions, analyze performance, and debrief to extract key lessons for the next build cycle.
+                                </p>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={meter1} alt="Club Outreach" />
+                                <h5>Club Outreach</h5>
+                                <p>
+                                  Organize workshops, public demos and technical sessions to promote motorsport culture and engineering excellence across campus.
+                                </p>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="Background" />
     </section>
   )
 }

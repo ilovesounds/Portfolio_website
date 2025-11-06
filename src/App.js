@@ -4,7 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
+import { AXL8RActivities, Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Photography } from "./components/Photography";
@@ -31,10 +31,10 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Banner />} />
-        <Route path="/skills" element={<Skills />} />
+        {/* <Route path="/skills" element={<AXL8RActivities />} /> */}
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/photography" element={<Photography />} />
+        {/* <Route path="/photography" element={<Photography />} /> */}
       </Routes>
       <Footer />
     </div>
