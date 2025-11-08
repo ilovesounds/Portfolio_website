@@ -27,18 +27,19 @@ import { Footer } from "./components/Footer";
 // export default App;
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Banner />} />
-        {/* <Route path="/skills" element={<AXL8RActivities />} /> */}
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/photography" element={<Photography />} /> */}
-      </Routes>
-      <Footer />
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Banner />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
+
 
 export default App;
