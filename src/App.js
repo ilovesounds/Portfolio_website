@@ -27,7 +27,7 @@ import { Footer } from "./components/Footer";
 // export default App;
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/Portfolio_website">
       <div className="App">
         <NavBar />
         <Routes>
