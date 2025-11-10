@@ -27,7 +27,7 @@ import { Footer } from "./components/Footer";
 // export default App;
 function App() {
   return (
-    <Router basename="/Portfolio_website">
+    
       <div className="App">
         <NavBar />
         <Routes>
@@ -37,7 +37,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    
   );
 }
 
